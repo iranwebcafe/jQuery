@@ -1,0 +1,25 @@
+﻿<!-- این برنامه توسط دکتر رضا زعفرانیه تهیه شده است -->
+<!-- زبان برنامه نویسی جی.کوئری   -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+<script>
+	function beforeText()
+	{
+		var txt1="<h1  style='color : red ;'>  سلام </h1>";      // Create element with HTML
+		var txt2=$("<h2></h2p>").text("  دکتر رضا  زعفرانیه ");     // Create with jQuery
+		var txt3=document.createElement("h3");  // Create with DOM
+		txt3.innerHTML="هستم";
+		$("img").before(txt1,txt2,txt3);          // Insert new elements before img
+	}
+</script>
+</head>
+<body>
+	<img src="reza.jpg"  >
+	<br>
+	<button onclick="beforeText()">قبل از عکس متن اضافه کن </button>
+</body>
+</html>
+            

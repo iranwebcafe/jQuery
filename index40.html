@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script> 
+		$(document).ready(function(){
+			  $("button#btn1").click(function(){
+				  $("div").animate({  height:'hide'  });
+				});
+				$("button#btn2").click(function(){
+				  $("div").animate({  height:'show'   });
+				});
+				$("button#btn3").click(function(){
+				    $("div").animate({  height:'toggle' });
+				});
+		  });
+    </script> 
+</head>
+ <body>
+	<button id="btn1">جعبه را محو کن</button>
+	<button id="btn2">جعبه را آشکار کن</button>
+	<button id="btn3">جعبه را جابجا کن</button>
+	<div style="background:orange ;height:100px;width:100px; position: absolute;">
+	</div>
+</body>
+</html>

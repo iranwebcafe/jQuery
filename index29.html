@@ -1,0 +1,28 @@
+﻿<!-- این برنامه توسط دکتر رضا زعفرانیه تهیه شده است -->
+<!-- زبان برنامه نویسی جی.کوئری   -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<style>
+	      .yellow {color:yellow; text-align:center;  font-size:30px;}
+	      .white  {color:white; text-align:center;   font-size:20px;}
+	</style>
+	<script>
+		$(document).ready(function(){
+		  $("button").click(function(){
+			$("h1,p").toggleClass("yellow");
+		  });
+		});
+	</script>
+</head>
+<body>
+    <div id="div1" style="height:100px;width:400px;background-color:maroon;">
+		<h1  class="yellow" >سلام دکتر رضا زعفرانیه هستم</h1>
+		<p  class="white" >به وبگاه من خوش آمدید</p>
+	</div>
+	<br>
+	<button>استایل را تغییر بده</button>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		function appendpara()
+		{
+			var txt1="<p>پاراگراف اچتیملی</p>";           // Create paragraph with HTML
+			var txt2=$("<p></p>").text("پاراگراف جی.کوئری");  // Create paragraph with jQuery
+			var txt3=document.createElement("p");
+			txt3.innerHTML="پاراگراف جاوا اسکریپتی";      // Create paragraph with JavaScript
+			$("body").append(txt1,txt2,txt3);        // Append new elements
+		}
+	</script>
+</head>
+<body>
+	<p>این یک پاراگراف عادی است</p>
+	<button onclick="appendpara()">پاراگراف ها را اضافه کن</button>
+</body>
+</html>

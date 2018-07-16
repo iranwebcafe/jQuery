@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script> 
+	$(document).ready(function(){
+	  $("#flip").click(function(){
+		$("#panel").slideUp(5000);
+	  });
+	});
+	</script>
+	<style type="text/css"> 
+		#panel,#flip{
+			padding:10px;
+			text-align:center;
+			background-color:orange;
+			border:solid 1px brown;
+			color:black;	}
+		#panel	{
+			color:white;
+				}
+	</style>
+</head>
+<body>
+	 <div id="flip">برای برداشتن مشخصات من کلیک کنید</div>
+	 <div id="panel">
+	    <h1 >سلام دکتر رضا زعفرانیه هستم</h1>
+		<h2 >به وبگاه من خوش آمدید</h2>
+		<p >آموزش جی.کوئری</p>
+	</div>
+</body>
+</html>

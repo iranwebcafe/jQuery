@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+        <script    src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+		</script>
+		<script>
+		$(document).ready(function(){
+		  $("button").click(function(){
+			$("h1,h2").addClass("yellow hbox");
+			$("p").addClass("white");
+			$("#div1").addClass("divbox");
+		  });
+		});
+		</script>
+		<style type="text/css">
+	      .yellow {color:yellow; text-align:center;  font-size:30px;}
+	      .white  {color:white; text-align:center;   font-size:20px;}
+		  .divbox { height:200px;width:400px;background-color:maroon;}
+		  .hbox { height:50px;width:400px;background-color:orange;}
+		</style>
+</head>
+<body>
+	<div id="div1">
+		<h1 >سلام دکتر رضا زعفرانیه هستم</h1>
+		<h2 >به وبگاه من خوش آمدید</h2>
+		<p >آموزش جی.کوئری</p>
+	</div>
+	<br>
+	<button>استایل را عوض کن</button>
+</body>
+</html>

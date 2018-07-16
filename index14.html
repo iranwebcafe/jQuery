@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+				  $("button").click(function(){
+					$("#w3s").attr("href", function(i,origValue){
+						return origValue + "/sadrooz/jquery.html"; 
+					  });
+					var str=$("#w3s").attr("href");
+					$("#p1").html( "<p> <a href=str id='w3s'>" + str + "</a></p>");
+				  });  // end of  click
+			});//  end of ready 
+	</script>
+</head>
+<body>
+		<p id= "p1"><a href="http://www.iranwebcafe.com" id="w3s">iranwebcafe.com</a></p>
+		<button>لینک را تغییر بده</button>
+		<p>برای تغییر لینک جی.کوئری بر روی دکمه بالا کلیک نمایید</p>
+</body>
+</html>

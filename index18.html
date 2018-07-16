@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+		<script>
+		$(document).ready(function(){
+		  $("#btn1").click(function(){
+			
+			var str1= $("#ins").val();
+			
+			$("img").before("<h1  style='color : red ;'>  <b> "+ str1 +"</b> </h1>");
+		  });
+		  $("#btn2").click(function(){
+		  var str1= $("#ins").val();
+			$("img").after("<p>  <b>"+str1+"</b> </p>");
+		  });
+		});
+		</script>
+</head>
+<body>
+	<img src="reza.jpg"  >
+	<br>
+	<button id="btn1">  متن به قبل از عکس اضافه کن </button>
+	<button id="btn2">متن به بعد از عکس اضافه کن</button>
+	<br />
+	<br />
+	<input  id ="ins" value ="مقدار را اضافه کن"  type ="text">
+</body>
+</html>

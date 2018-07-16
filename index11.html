@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function()
+		{
+			 $("#btn1").click(function()
+			 {
+					$("#txt1").text(function(i,origText){
+					
+					  return  origText + "خوش آمدید"+ " (index: " + i + ")"; 
+					});
+					
+					
+			  });// end of btn1  
+			  
+			
+			  
+			  $("#btn2").click(function(){
+					$("#txt2").html(function(i,origText){
+					
+				 return   "<p  style =' color:red ; display:inline;' > " + origText +"صد روز تا دیویلوپری </p>";
+
+                  			
+					});
+			  });// end of btn2 
+			  
+		});// end of ready
+	</script>
+</head>
+<body>
+	<p id="txt1">سلام ، به آموزش جی کوئری </p>
+	<p id="txt2">سری </p>
+	<button id="btn1">متن را تغییر بده</button>
+	<button id="btn2">اچتیمل را تغییر بده</button>
+</body>
+</html>

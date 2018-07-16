@@ -1,0 +1,25 @@
+﻿<!-- این برنامه توسط دکتر رضا زعفرانیه تهیه شده است -->
+<!-- زبان برنامه نویسی جی.کوئری   -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script    src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+		</script>
+		<script>
+				$(document).ready(function(){
+                    $("button").click(function(){
+							$("p").toggle();
+							if   ($("button").text()=="نمایش" )  {
+							     $("button").text("پنهان");   }
+							else {	 
+							     $("button").text("نمایش"); } 
+					 });
+                });
+		</script>
+	</head>
+	<body>
+		<button >پنهان</button>
+		<p>سلام ، دکتر رضا زعفرانیه هستم</p>
+		<p>به وبگاه من خوش آمدید</p>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script> 
+		$(document).ready(function(){
+		  $("button").click(function(){
+			 alert("رنگ پس زمینه = " + $("p").css("background-color"));
+		  });
+		});
+	</script>
+</head>
+<body>
+		<h2>برگرداندن مقدار خصوصیت در جی.کوئری</h2>
+		<p style="background-color:#ff0000">این پاراگراف  پس زمینه قرمز دارد</p>
+		<p style="background-color:#ffffff">این پاراگراف  پس زمینه سفید دارد</p>
+		<p style="background-color:green">این پاراگراف  پس زمینه سبز دارد</p>
+		<button>رنگ پس زمینه را برگردان</button>
+</body>
+</html>

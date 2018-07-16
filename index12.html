@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+		  $("button").click(function(){
+			$("#w3s").attr("href","http://www.iranwebcafe.com/sadrooz/jquery.html");
+			"href","http://www.iranwebcafe.com/sadrooz/jquery.html"
+			var str=$("#w3s").attr("href");
+			$("#p1").html( "<p> <a href=str id='w3s'>" + str + "</a></p>");			
+		  });
+		});
+	</script>
+</head>
+<body>
+	<p  id="p1">
+	<a href="http://www.iranwebcafe.com" id="w3s">www.iranwebcafe.com</a>
+	</p>
+	<button>خصوصیت را عوض کن</button>
+	<p>اگر بر روی دکمه فوق کلیک نمایید خصوصیت لینک تغییر خواهد کرد</p>
+</body>
+</html>

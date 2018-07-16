@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function(){
+	  $("#btn1").click(function(){
+		$("p").append(" <b>.متن اضافه شده </b>");
+	  });
+
+	  $("#btn2").click(function(){
+		$("ol").append("<li>آیتم<b> لیست </b>اضافه شده</li>");
+	  });
+	});
+	</script>
+</head>
+<body>
+		<p  id="p1">این  اولین پاراگراف است</p>
+		<p>این دومین پاراگراف است</p>
+		<ol>
+			<li>آیتم لیست اول</li>
+			<li>آیتم لیست دوم</li>
+		</ol>
+		<button id="btn1">متن اضافه کن</button>
+		<button id="btn2">آیتم لیست اضافه کن</button>
+</body>
+</html>

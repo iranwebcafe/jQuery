@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+			$(document).ready(function(){
+			  $("button").click(function(){
+				 var strhtml="";
+				 strhtml+="نمایش پهنای عنصر دیویژن = " + $("#div1").width() + "  </br>";
+				 strhtml+="نمایش ارتفاع عنصر دیویژن = " + $("#div1").height();
+				 $("#div1").html(strhtml);
+			  });
+			});
+		</script>
+</head>
+<body>
+	<div id="div1" style="width:300px;height:100px;padding:10px;
+	                 margin:5px;border:2px solid blue;background-color:lightblue;">
+	</div>
+	<br>
+	<button>نمایش ابعاد یک عنصر</button>
+</body>
+</html>

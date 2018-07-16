@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script> 
+		$(document).ready(function(){
+		  $("button").click(function(){
+			var div=$("div");  
+			    div.animate({height:'300px',opacity:'0.4'},"slow");
+				div.animate({width:'300px',opacity:'0.8'},"slow");
+				div.animate({height:'200px',opacity:'0.4'},"fast");
+				div.animate({width:'100px',opacity:'0.8'},"slow");
+				div.animate({width:'600px',opacity:'0.8'},"fast");
+			    div.animate({fontSize:'4em'  },"(5000)");
+			});
+		});
+	</script> 
+</head>
+ <body>
+	<button>انیمیشن را شروع کن</button>
+	<div style="background:orange ;height:100px;width:100px; position: absolute;">
+	<p >  دکتر رضا زعفرانیه هستم </p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<!-- این برنامه توسط دکتر رضا زعفرانیه تهیه شده است -->
+<!-- زبان برنامه نویسی جی.کوئری   -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+		  $("button").click(function(){
+			$("#div1").fadeIn();
+			$("#div2").fadeIn("slow");
+			$("#div3").fadeIn(5000);
+		  });
+		});
+	</script>
+</head>
+<body>
+	<div id="div1" style="display :none; width:100px;height:50px; background-color:red;"></div>
+	<div id="div2" style="display :none; width:100px;height:50px; background-color:green;"></div>
+	<div id="div3" style="display :none; width:100px;height:50px; background-color:blue;"></div>
+	<br><br>
+	<button> جعبه های رنگی را آشکار کن</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script> 
+		$(document).ready(function(){
+			   $("button#btn1").click(function(){
+					$("p").hide((2000)	
+					,function()
+					{
+					    $("p").text(" ابتدا پاراگراف محو می شود و دیگر پاراگرافی وجود ندارد که متن آن عوض شود");
+				    });	 
+				 });//  end of btn1 click
+			
+			    $("button#btn2").click(function(){
+				   $("p").show();
+			    });//  end of btn2 click
+		}); //  end of ready
+	</script>
+</head>
+	<body>
+	<button id="btn1">پاراگراف را محو کن</button>
+	<button id="btn2">پاراگراف محو شده را آشکار کن</button>
+	<p>سلام ،دکتر رضا زعفرانیه هستم</p>
+	</body>
+</html>
